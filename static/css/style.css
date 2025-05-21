@@ -1,7 +1,0 @@
-#name {
-    color: red;  /* id 선택자 - 이름 입력칸 텍스트 색 */
-}
-
-.label-name {
-    color: rgb(61, 247, 123);  /* class 선택자 - "Name:" 라벨 색 */
-}
