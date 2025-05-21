@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+</head>
+<body>
+    <h1>Address Book</h1>
+    <form action="/add" method="post" enctype="multipart/form-data" onsubmit="return showPreview();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        <br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br><br>
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" onchange="previewImage(event)">
+        <br><br>
+        <img id="preview" src="#" alt="Image Preview" style="display:none; max-width:150px; max-height:150px;"/>
+        <br><br>
+        <button type="submit">Add Contact</button>
+    </form>
+    <script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function(){
+            var output = document.getElementById('preview');
+            output.src = reader.result;
+            output.style.display = 'block';
+        };
+        if(event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    }
+    </script>
+</body>
+</html>
