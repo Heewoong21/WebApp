@@ -113,3 +113,5 @@ http://127.0.0.1:5000 을 Ctrl 버튼 누르고 클릭을 하게되면
 </body>
 </html>
 ```
+
+![webcam](https://github.com/user-attachments/assets/316fef73-a4a0-46f2-8b74-88bfc6fb0f04)
