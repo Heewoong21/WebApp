@@ -116,14 +116,14 @@ http://127.0.0.1:5000 을 Ctrl 버튼 누르고 클릭을 하게되면
 
 ![webcam](https://github.com/user-attachments/assets/316fef73-a4a0-46f2-8b74-88bfc6fb0f04)
 
-# 3차 추가 (코드 정리)
-js 코드는 따로 contact.js 파일로 뺴서 정리를 하였다.
+# 3차 추가 (코드 정리)  
+js 코드는 따로 contact.js 파일로 뺴서 정리를 하였다.  
 최종 폴더 구조는  
-![image](https://github.com/user-attachments/assets/7a133af7-f321-4f5a-9a15-d4fc1ea05276)
-이런식으로 구성되고 
+![image](https://github.com/user-attachments/assets/7a133af7-f321-4f5a-9a15-d4fc1ea05276)  
+이런식으로 구성되고    
 
-코드는
-### index.html
+코드는  
+### index.html  
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -268,3 +268,6 @@ def add_contact():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+
+## 최종 페이지 구성  
+![image](https://github.com/user-attachments/assets/ea8ec6fa-baf9-4558-bbf5-c49a107d886c)
